@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>M Pallini - Assignment 5</title>
+<title>MNIST Classifier</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13199,7 +13199,7 @@ div#notebook {
     <span class="n">imageid</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">pred</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">)]</span>
     <span class="n">file</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;ImageID&#39;</span><span class="p">:</span> <span class="n">imageid</span><span class="p">,</span>
                         <span class="s1">&#39;Label&#39;</span><span class="p">:</span> <span class="n">pred</span><span class="p">})</span>
-    <span class="n">file</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+    <span class="n">file</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">index</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
 </pre></div>
 
     </div>
